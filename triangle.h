@@ -14,6 +14,8 @@
 #ifndef __TRIANGLE__
 #define __TRIANGLE__
 
+using namespace std;
+
 class Point {
 	double _x,_y,_z;
 public:

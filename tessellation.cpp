@@ -80,9 +80,17 @@ Face tessellate_face(const TopoDS_Face &aFace)
 
 	if(!aTr.IsNull())
 	{
-		const TColgp_Array1OfPnt& aNodes = aTr->Nodes();
+		// const TColgp_Array1OfPnt& aNodes = aTr->Nodes();
+		TColgp_Array1OfPnt aNodes(1, aTr->NbNodes());
+		for (int i = 1; i <= aTr->NbNodes(); i++)
+			aNodes(i) = aTr->Node(i);
+
 		const Poly_Array1OfTriangle& triangles = aTr->Triangles();
-		const TColgp_Array1OfPnt2d & uvNodes = aTr->UVNodes();
+
+		//const TColgp_Array1OfPnt2d& uvNodes = aTr->UVNodes();
+		TColgp_Array1OfPnt2d uvNodes(1, aTr->NbNodes());
+		for (int i = 1; i <= aTr->NbNodes(); i++)
+			uvNodes(i) = aTr->UVNode(i);
 
 		TColgp_Array1OfPnt aPoints(1, aNodes.Length());
 		for(Standard_Integer i = 1; i < aNodes.Length()+1; i++)

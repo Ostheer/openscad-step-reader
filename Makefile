@@ -21,6 +21,7 @@
 CPPFLAGS=-I/usr/include/opencascade
 CXXFLAGS=-std=c++11 -g -O0
 
+
 LDFLAGS=-lTKSTL -lTKXDESTEP -lTKBinXCAF -lTKXmlXCAF -lTKXDEIGES -lTKXCAF \
  -lTKIGES -lTKSTEP -lTKSTEP209 -lTKSTEPAttr -lTKSTEPBase -lTKXSBase \
  -lTKStd -lTKStdL -lTKXml -lTKBin -lTKXmlL -lTKBinL -lTKCAF -lTKXCAF \
@@ -35,8 +36,8 @@ LDFLAGS=-lTKSTL -lTKXDESTEP -lTKBinXCAF -lTKXmlXCAF -lTKXDEIGES -lTKXCAF \
  -lTKPrim -lTKTopAlgo -lTKGeomAlgo -lTKBRep -lTKGeomBase \
  -lTKG3d -lTKG2d \
  \
- /usr/lib/x86_64-linux-gnu/libTKMath.so.7.3.0 \
- /usr/lib/x86_64-linux-gnu/libTKernel.so.7.3.0 \
+ /usr/lib/libTKMath.so \
+ /usr/lib/libTKernel.so \
  \
  -lfreetype -lpthread -lrt -lstdc++ -ldl -lm\
 

@@ -32,6 +32,8 @@
 #include <gp_GTrsf.hxx>
 #include <TColgp_HArray1OfPnt.hxx>
 #include <BRepTools_WireExplorer.hxx>
+#include <GeomAbs_SurfaceType.hxx>
+#include <BRepAdaptor_Surface.hxx>
 #include <math.hxx>
 
 

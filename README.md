@@ -2,6 +2,14 @@
 
 A proof-of-concept project, testing OpenSCAD / STEP files loading.
 
+
+## Fork edits
+Forked to make some minor modifications to a few files to deal with API changes in opencascade > 7.2.
+This compiled and worked correctly in October 2024  on `archlinux 6.6.56-1-lts` with `opencascade 1:7.7.2-6`.
+
+I downgraded opencascade a little bit (from `1:7.8.1-2`) because version 7.8 brought some TK library reorganization that is incompatible with the hardcoded Makefile.
+In this [forum post](https://dev.opencascade.org/node/87697#comment-25983), Dmitrii links to [this piece of documentation](https://dev.opencascade.org/doc/overview/html/occt__upgrade.html#upgrade_occt780) on how you should properly perform the upgrade/migration.
+
 ## Usage
 
 
